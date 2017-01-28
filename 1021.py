@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+valor = float(input())
+if 0 <= valor <= 1000000.00:
+    print("NOTAS:")
+    cem = int(valor/100)
+    print(cem, "nota(s) de R$ 100.00")
+    cinquenta = int(valor%100/50)
+    print(cinquenta, "nota(s) de R$ 50.00")
+    vinte = int(valor%100%50/20)
+    print(vinte, "nota(s) de R$ 20.00")
+    dez = int(valor%100%50%20/10)
+    print(dez, "nota(s) de R$ 10.00")
+    cinco = int(valor%100%50%20%10/5)
+    print(cinco, "nota(s) de R$ 5.00")
+    dois = int(valor%100%50%20%10%5/2)
+    print(dois, "nota(s) de R$ 2.00")
+    print("MOEDAS:")
+    um = int(valor % 100 % 50 % 20 % 10 % 5 % 2 / 1)
+    print(um, "moeda(s) de R$ 1.00")
+    ciquentaCent = int(valor % 100 % 50 % 20 % 10 % 5 % 2 % 1/0.5)
+    print(ciquentaCent, "moeda(s) de R$ 0.50")
+    vintecincoCent = int(valor % 100 % 50 % 20 % 10 % 5 % 2 % 1 % 0.5/0.25)
+    print(vintecincoCent, "moeda(s) de R$ 0.25")
+    dezCent = int(valor % 100 % 50 % 20 % 10 % 5 % 2 % 1 % 0.5 % 0.25 / 0.10)
+    print(dezCent, "moeda(s) de R$ 0.10")
+    cincoCent = int(valor % 100 % 50 % 20 % 10 % 5 % 2 % 1 % 0.5 % 0.25 % 0.10 / 0.05)
+    print(cincoCent, "moeda(s) de R$ 0.05")
+    umCent = int(valor % 100 % 50 % 20 % 10 % 5 % 2 % 1 % 0.5 % 0.25 % 0.10 % 0.05 / 0.01)
+    print(umCent, "moeda(s) de R$ 0.01")
+else:
+    
+
